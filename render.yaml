@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: uptime-kuma
+    env: docker
+    plan: free
+    disk:
+      name: kuma-data
+      mountPath: /app/data
+      sizeGB: 1
